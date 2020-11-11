@@ -23,4 +23,8 @@ public class CalculatorModel {
     public void divide(double arg){
         value /= arg;
     }
+
+    public double getValue(){
+        return value;
+    }
 }

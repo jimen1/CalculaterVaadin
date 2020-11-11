@@ -14,8 +14,14 @@ import com.vaadin.flow.server.PWA;
 public class MainView extends VerticalLayout {
 
     public MainView() {
-        Button button = new Button("Click me",
+        /*Button button = new Button("Click me",
                 event -> Notification.show("Clicked!"));
-        add(button);
+        add(button);*/
+
+        CalculatorModel model = new CalculatorModel();
+        CalculatorViewImpl view = new CalculatorViewImpl();
+
+        new CalculatorPresenter(model, view);
+        add(view);
     }
 }
