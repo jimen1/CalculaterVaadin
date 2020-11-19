@@ -12,6 +12,8 @@ public class CalculatorPresenter implements CalculatorView.CalculatorViewListene
         this.view = view;
         view.setDisplay(current);
         view.addListener(this);
+
+
     }
 
     @Override
@@ -23,7 +25,7 @@ public class CalculatorPresenter implements CalculatorView.CalculatorViewListene
         }
         switch (lastOperationRequested){
             case '+': model.add(current); break;
-            case '-': model.add(- current); break;
+            case '-': model.add(-current); break;
             case '/': model.divide(current); break;
             case '*': model.multiply(current); break;
             case 'C': model.setValue(current); break;

@@ -25,6 +25,6 @@ public class CalculatorModel {
     }
 
     public double getValue(){
-        return value;
+        return this.value;
     }
 }

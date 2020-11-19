@@ -66,7 +66,6 @@ public class CalculatorViewImpl extends VerticalLayout implements CalculatorView
                 listener.buttonClick((event.getSource().getText().charAt(0)));
         });
     }
-
     @Override
     public void setDisplay(double value) {
         display.setValue(Double.toString(value));
